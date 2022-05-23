@@ -23,9 +23,9 @@ import { RouterLink, RouterView } from "vue-router";
 @import "@/assets/flexboxgrid.css";
 @font-face {
   font-family: "Aldo the Apache";
-  src: url("fonts/AldotheApache.woff2") format("woff2"),
-    url("fonts/AldotheApache.woff") format("woff"),
-    url("fonts/AldotheApache.ttf") format("truetype");
+  src: url("@/assets/fonts/AldotheApache.woff2") format("woff2"),
+    url("@/assets/fonts/AldotheApache.woff") format("woff"),
+    url("@/assets/fonts/AldotheApache.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
