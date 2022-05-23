@@ -5,8 +5,8 @@
     }}</template>
   </metainfo>
   <header>
-    <div>
-      <h1><a href="/">Home</a></h1>
+    <div class="title">
+      <h1><a href="/">Red de Culto</a></h1>
     </div>
     <div class="wrapper"></div>
   </header>
@@ -23,9 +23,7 @@ import { RouterLink, RouterView } from "vue-router";
 @import "@/assets/flexboxgrid.css";
 
 #app {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
 
   font-weight: normal;
 }
@@ -85,5 +83,23 @@ nav a:first-of-type {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+.title {
+  text-align: center;
+  background-color: #fef100;
+}
+.title h1 a {
+  color: #ed008b;
+  font-weight: bold;
+  padding: 0.5rem;
+  font-family: "Aldo the Apache";
+}
+@font-face {
+  font-family: "Aldo the Apache";
+  src: url("font/AldotheApache.woff2") format("woff2"),
+    url("font/AldotheApache.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 </style>

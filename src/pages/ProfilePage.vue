@@ -1,19 +1,9 @@
 <template>
   <div class="greetings">
-    <h2>Perfil</h2>
-    <div v-if="result" class="searchResult">
-      <Post
-        v-for="(context, index) in result.postsByUser"
-        :postItemContext="context"
-        v-bind:key="index"
-      />
-    </div>
-    <div></div>
-    <div class="footer-spacer"></div>
+    hola
   </div>
 </template>
 <script lang="ts">
-import Post from "@/components/Post.vue";
 import { ref, defineComponent, onMounted } from "vue";
 import { useRoute } from "vue-router";
 import { useMeta } from "vue-meta";
@@ -21,9 +11,6 @@ import { useMeta } from "vue-meta";
 export default defineComponent({
   name: "ProfilePage",
   props: ["msg"],
-  components: {
-    Post,
-  },
   setup(props: any) {
     const route = useRoute();
     let userId = ref<string>("1");
