@@ -21,7 +21,14 @@ import { RouterLink, RouterView } from "vue-router";
 <style>
 @import "@/assets/base.css";
 @import "@/assets/flexboxgrid.css";
-
+@font-face {
+  font-family: "Aldo the Apache";
+  src: url("font/AldotheApache.woff2") format("woff2"),
+    url("font/AldotheApache.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 #app {
   margin: 0 auto;
 
@@ -92,14 +99,6 @@ nav a:first-of-type {
   color: #ed008b;
   font-weight: bold;
   padding: 0.5rem;
-  font-family: "Aldo the Apache";
-}
-@font-face {
-  font-family: "Aldo the Apache";
-  src: url("font/AldotheApache.woff2") format("woff2"),
-    url("font/AldotheApache.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+  font-family: "Aldo the Apache", Helvetica, Arial;
 }
 </style>
