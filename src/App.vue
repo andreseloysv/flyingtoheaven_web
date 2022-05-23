@@ -24,7 +24,8 @@ import { RouterLink, RouterView } from "vue-router";
 @font-face {
   font-family: "Aldo the Apache";
   src: url("fonts/AldotheApache.woff2") format("woff2"),
-    url("fonts/AldotheApache.woff") format("woff");
+    url("fonts/AldotheApache.woff") format("woff"),
+    url("fonts/icomoon.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -101,6 +102,4 @@ nav a:first-of-type {
   padding: 0.5rem;
   font-family: "Aldo the Apache", Helvetica, Arial;
 }
-
-
 </style>
