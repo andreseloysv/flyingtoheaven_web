@@ -12,9 +12,14 @@ const router = createRouter({
       component: () => import("../pages/LandingPage.vue"),
     },
     {
-      path: "/profile/:id",
-      name: "profile",
-      component: () => import("../pages/ProfilePage.vue"),
+      path: "/ranking/:name",
+      name: "ranking_country",
+      component: () => import("../pages/RankingPage.vue"),
+    },
+    {
+      path: "/ranking",
+      name: "ranking",
+      component: () => import("../pages/RankingPage.vue"),
     },
   ],
 });
