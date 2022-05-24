@@ -55,7 +55,7 @@ import { ref, defineComponent } from "vue";
 import { useMeta } from "vue-meta";
 
 export default defineComponent({
-  name: "FeedPage",
+  name: "LandingPage",
   props: ["msg"],
   setup(props: any) {
     const searchInput = ref();
@@ -64,7 +64,7 @@ export default defineComponent({
     let user: any = ref({});
 
     async function newPostEvent() {
-      console.log("Reload feed");
+      console.log("Reload Landing");
     }
 
     const { meta } = useMeta({});
@@ -177,7 +177,6 @@ export default defineComponent({
     padding-top 152.6667%
     position relative
     border-bottom #FFF 3px solid
-    background url( '../img/common/bg_stripe.png' ) 0 0
 
   .hero__update-bg
     position absolute
