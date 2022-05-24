@@ -32,11 +32,7 @@
       <div class="hero-info">
         <div class="hero-info__body">
           <div class="hero-appstore-btn">
-            <a
-              href="https://itunes.apple.com/es/app/id1145275343"
-              target="_blank"
-              ><span></span
-            ></a>
+            <a href="#" target="_blank"><span></span></a>
           </div>
           <div class="hero-googleplay-btn">
             <a
@@ -93,7 +89,7 @@ export default defineComponent({
   position absolute
   left 0
   top 0
-  background url( '../img/hero_bg_update.jpg' ) 0 0 no-repeat
+  background url( '/img/hero_bg_update.jpg' ) 0 0 no-repeat
   -webkit-background-size cover
   background-size cover
   width 100%
@@ -182,7 +178,7 @@ export default defineComponent({
     position absolute
     left 0
     top 0
-    background url( '../img/hero_bg_update.jpg' ) 0 0 no-repeat
+    background url( '/img/hero_bg_update.jpg' ) 0 0 no-repeat
     -webkit-background-size cover
     background-size cover
     width 100%
