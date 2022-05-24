@@ -157,6 +157,7 @@ export default defineComponent({
       top 30%
       width 19.8%
       margin-left -7.2%
+      z-index 10
 
       & span
         display block
@@ -202,15 +203,14 @@ export default defineComponent({
     width 57.3333%
     z-index 5
 
-.hero-info
-  .hero-info__body
-    .hero-googleplay-btn
-      position absolute
-      text-align center
-      top 30%
-      width 43.8%
-      left 0
-      right 0
-      margin auto
-      z-index 10
+  .hero-info
+    .hero-info__body
+      .hero-googleplay-btn
+        position absolute
+        text-align center
+        top 30%
+        width 43.8%
+        left 0
+        right 0
+        margin auto
 </style>
