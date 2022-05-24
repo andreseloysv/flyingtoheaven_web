@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div>{{ rankingContext.country }}</div>
-    <div>{{ rankingContext.position }}</div>
+    <div>{{ rankingContext?.country }}</div>
+    <div>{{ rankingContext?.position }}</div>
     <div>
-      <img src="{{`/img/${rankingContext.character}.png`}}" height="40" />
+      <img :src="`/img/${rankingContext?.character}.png`" height="40" />
     </div>
-    <div>{{ rankingContext.name }}</div>
-    <div>{{ rankingContext.points }}</div>
+    <div>{{ rankingContext?.name }}</div>
+    <div>{{ rankingContext?.points }}</div>
   </div>
 </template>
 
