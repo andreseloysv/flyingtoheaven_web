@@ -13,6 +13,7 @@
 <script lang="ts">
 import { ref, defineComponent, onMounted } from "vue";
 import { useRoute } from "vue-router";
+import { backendUrl } from "@/constans";
 import { useMeta } from "vue-meta";
 import RankingItem from "@/components/RankingItem.vue";
 export interface RankingContext {
@@ -40,7 +41,7 @@ export default defineComponent({
     async function fetchData() {
       loading.value = true;
       try {
-        const res = await fetch("http://localhost:3000/ranking", {
+        const res = await fetch(`${backendUrl}/ranking`, {
           method: "get",
           headers: {
             "content-type": "application/json",
