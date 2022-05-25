@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div>{{ rankingContext?.country }}</div>
+  <div class="row">
+    <div class="col-xs-1">{{ rankingContext?.country }}</div>
     <div>{{ rankingContext?.position }}</div>
     <div>
       <img :src="`/img/${rankingContext?.character}.png`" height="40" />

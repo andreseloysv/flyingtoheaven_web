@@ -2,7 +2,13 @@
   <div class="greetings">
     <h1>Ranking</h1>
 
-    <div>name {{ name }}</div>
+    <div class="row">
+      <div class="col-xs-1">Country</div>
+      <div>Position</div>
+      <div>character</div>
+      <div>Name</div>
+      <div>Points</div>
+    </div>
     <ranking-item
       v-for="(context, index) in result"
       :rankingContext="context"
@@ -13,9 +19,11 @@
 <script lang="ts">
 import { ref, defineComponent, onMounted } from "vue";
 import { useRoute } from "vue-router";
-import { backendUrl } from "@/constans";
+import { backendUrl } from "@/globals/constans";
 import { useMeta } from "vue-meta";
 import RankingItem from "@/components/RankingItem.vue";
+import { countries } from "@/globals/countries";
+
 export interface RankingContext {
   id: number;
   country: string;
@@ -48,7 +56,17 @@ export default defineComponent({
           },
         });
 
-        result.value = await res.json();
+        const rankingRaw = await res.json();
+        result.value = rankingRaw.map((r: RankingContext) => {
+          return {
+            id: r.id,
+            country: countries.get(r.country),
+            position: r.position,
+            character: r.character ? r.character : "manu",
+            name: r.name,
+            points: r.points,
+          };
+        });
       } catch (err) {
         error.value = err;
         console.log(err);
